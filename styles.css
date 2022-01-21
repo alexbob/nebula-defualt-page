@@ -1,0 +1,11 @@
+.background-image {
+    height: 100vh;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_birthofstars_0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
