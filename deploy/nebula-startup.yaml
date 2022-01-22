@@ -5,7 +5,7 @@ metadata:
     app: nebula-poc
   name: pillars-of-creation
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       name: nebula-poc
