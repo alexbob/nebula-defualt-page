@@ -15,7 +15,7 @@ spec:
         name: nebula-poc
     spec:
       containers:
-      - image: localhost:5000/nebula-default-page:latest
+      - image: 10.96.15.76:5000/nebula-default-page:latest
         name: nebula-poc
         ports:
         - containerPort: 80
