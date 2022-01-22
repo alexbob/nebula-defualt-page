@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nebula-poc
+  name: pillars-of-creation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: nebula-poc
+  template:
+    metadata:
+      labels:
+        name: nebula-poc
+    spec:
+      containers:
+      - image: localhost:5000/nebula-default-page:latest
+        name: nebula-poc
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nebula-poc-service
+spec:
+  selector:
+    name: nebula-poc
+  ports:
+    - port: 80
+      targetPort: 80
